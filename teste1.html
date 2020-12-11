@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTANDO ESTUDO HTML</title>
+    <script>
+        let a = "carro";
+        let b = 1;
+        var c = 10;
+        const d = "constante";
+
+        function ClickNoBotao() {
+            alert("Hello, teste, testando");
+        }
+
+        function AtualizaTexto() {
+
+            let input = document.getElementById("inputnovo");
+            let p = document.getElementById("para");
+
+            p.textContent = input.value;
+
+            console.log("oi");
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: seagreen;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: purple;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border: solid 5px purple;
+            padding: 2px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .margem-minima {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .margem-minima input,
+        .margem-minima select,
+        .margem-minima button{
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Teste Título</h1>
+        <h2>Teste 2</h2>
+        <p id="para">paragrafo</p>
+        <span>informação qualquer</span>
+    </div>
+    <img src="p13.jpg" />
+    <div class="margem-minima">
+        <a class="margem-minima" href="https://google.com.br"> Bora pro Google </a>
+    </div>
+
+    <div class="margem-minima">
+        <input id="inputnovo" type="text" oninput="AtualizaTexto()" />
+    </div>
+
+    <div class="margem-minima">
+        <select>
+            <option>Primeira</option>
+            <option>Segunda</option>
+            <option>Terceira</option>
+        </select>
+    </div>
+
+    <div class="margem-minima">
+        <button onclick="ClickNoBotao()">Botãozinho</button>
+    </div>
+</body>
+
+</html>
